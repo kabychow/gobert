@@ -81,6 +81,10 @@ func NewBert(m *tf.SavedModel, vocabPath string, opts ...BertOption) (Bert, erro
 		b = opt(b)
 	}
 	b.p = estimator.NewPredictor(m, b.modelFunc)
+	ops := m.Graph.Operations()
+	for _, op := range ops {
+		fmt.Println(op.Name())
+	}
 	return b, nil
 
 }
