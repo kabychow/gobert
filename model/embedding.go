@@ -7,7 +7,7 @@ import (
 // Embedding Defaults
 const (
 	EmbeddingModelTag = "serve"
-	EmbeddingOp       = "output"
+	EmbeddingOp       = "embeddings"
 )
 
 // NewEmbeddings returns a pre-trained model for text embeddings

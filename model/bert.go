@@ -74,8 +74,7 @@ func NewBert(m *tf.SavedModel, vocabPath string, opts ...BertOption) (Bert, erro
 					m.Graph.Operation(EmbeddingOp).Output(0),
 					//		m.Graph.Operation("feature_ids").Output(0),
 				},
-				[]*tf.Operation{
-				}
+				nil
 		},
 	}
 	for _, opt := range opts {
