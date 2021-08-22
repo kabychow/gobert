@@ -6,7 +6,7 @@ import (
 
 // Embedding Defaults
 const (
-	EmbeddingModelTag = "bert-pretrained"
+	EmbeddingModelTag = "serve"
 	EmbeddingOp       = "embedding"
 )
 
