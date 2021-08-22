@@ -70,7 +70,7 @@ func NewBert(m *tf.SavedModel, vocabPath string, opts ...BertOption) (Bert, erro
 		},
 		modelFunc: func(m *tf.SavedModel) ([]tf.Output, []*tf.Operation) {
 			return []tf.Output{
-					//		m.Graph.Operation("feature_ids").Output(0),
+					m.Graph.Operation("feature_ids").Output(0),
 				},
 				nil
 		},
