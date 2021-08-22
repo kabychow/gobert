@@ -7,7 +7,7 @@ import (
 // Embedding Defaults
 const (
 	EmbeddingModelTag = "serve"
-	EmbeddingOp       = "embedding"
+	EmbeddingOp       = "StatefulPartitionedCall"
 )
 
 // NewEmbeddings returns a pre-trained model for text embeddings
