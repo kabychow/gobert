@@ -21,7 +21,7 @@ const (
 // Default values
 const (
 	DefaultSeqLen    = 128
-	DefaultVocabFile = "vocab.txt"
+	DefaultVocabFile = "assets/cased_vocab.txt"
 )
 
 // TensorInputFunc maps tensors to an estimator.InputFunc in the Predict pipeline
