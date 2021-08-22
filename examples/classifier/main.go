@@ -5,7 +5,7 @@ import (
 	"os"
 	"strings"
 
-	"github.com/buckhx/gobert/model"
+	"github.com/kabychow/gobert/model"
 )
 
 /*

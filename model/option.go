@@ -1,8 +1,8 @@
 package model
 
 import (
-	"github.com/buckhx/gobert/model/estimator"
-	"github.com/buckhx/gobert/tokenize"
+	"github.com/kabychow/gobert/model/estimator"
+	"github.com/kabychow/gobert/tokenize"
 )
 
 // BertOption configures a BERT model

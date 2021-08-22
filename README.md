@@ -1,6 +1,6 @@
 # gobert
 ![stability-experimental](https://img.shields.io/badge/stability-experimental-orange.svg)
-[![GoDoc](https://godoc.org/github.com/buckhx/gobert?status.svg)](https://godoc.org/github.com/buckhx/gobert)
+[![GoDoc](https://godoc.org/github.com/kabychow/gobert?status.svg)](https://godoc.org/github.com/kabychow/gobert)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 Go bindings for operationalizing [BERT](https://github.com/google-research/bert) models. Train in Python, run in Go.

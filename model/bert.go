@@ -4,9 +4,9 @@ package model
 import (
 	"fmt"
 
-	"github.com/buckhx/gobert/model/estimator"
-	"github.com/buckhx/gobert/tokenize"
-	"github.com/buckhx/gobert/tokenize/vocab"
+	"github.com/kabychow/gobert/model/estimator"
+	"github.com/kabychow/gobert/tokenize"
+	"github.com/kabychow/gobert/tokenize/vocab"
 	tf "github.com/tensorflow/tensorflow/tensorflow/go"
 )
 
