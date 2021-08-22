@@ -13,9 +13,9 @@ import (
 // Operation names
 const (
 	//#	UniqueIDsOp    = "unique_ids"
-	InputIDsOp     = "input_word_ids"
-	InputMaskOp    = "input_mask"
-	InputTypeIDsOp = "input_type_ids"
+	InputIDsOp     = "serving_default_input_word_ids"
+	InputMaskOp    = "serving_default_input_mask"
+	InputTypeIDsOp = "serving_default_input_type_ids"
 )
 
 // Default values
