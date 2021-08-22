@@ -15,7 +15,7 @@ const (
 	//#	UniqueIDsOp    = "unique_ids"
 	InputIDsOp     = "input_word_ids"
 	InputMaskOp    = "input_mask"
-	InputTypeIDsOp = "segment_ids"
+	InputTypeIDsOp = "input_type_ids"
 )
 
 // Default values
