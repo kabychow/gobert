@@ -62,12 +62,14 @@ func NewBert(m *tf.SavedModel, vocabPath string, opts ...BertOption) (Bert, erro
 		inputFunc: func(inputs map[string]*tf.Tensor) estimator.InputFunc {
 			return func(m *tf.SavedModel) map[tf.Output]*tf.Tensor {
 				return map[tf.Output]*tf.Tensor{
+					m.Graph.Operation(InputIDsOp).Output(0):     inputs[InputIDsOp],
+					m.Graph.Operation(InputMaskOp).Output(0):    inputs[InputMaskOp],
+					m.Graph.Operation(InputTypeIDsOp).Output(0): inputs[InputTypeIDsOp],
 				}
 			}
 		},
 		modelFunc: func(m *tf.SavedModel) ([]tf.Output, []*tf.Operation) {
 			return []tf.Output{
-					m.Graph.Operation(EmbeddingOp).Output(0),
 					//		m.Graph.Operation("feature_ids").Output(0),
 				},
 				nil
